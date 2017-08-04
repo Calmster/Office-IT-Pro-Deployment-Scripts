@@ -177,7 +177,7 @@ This section will walk you through setting up your System Center Configuration M
 	* **Bitness**  Available options are **v32, v64, Both**. Default value is Both.
 	* **Version** You can specify a version to download. Versions and the associated channels can be found [Here](https://technet.microsoft.com/en-us/library/mt592918.aspx)
 	
-			Example: Download-CMOfficeChannels -Channels Deferred,FirstReleaseDeferred -OfficeFilesPath D:\OfficeChannels -Languages en-us,es-es,de-de -Bitness v32
+			Example: Download-CMOfficeChannelFiles -Channels Deferred,FirstReleaseDeferred -OfficeFilesPath D:\OfficeChannels -Languages en-us,es-es,de-de -Bitness v32
 
 ### Create the Office ProPlus package
 
@@ -338,5 +338,5 @@ Once you have dsitributed the content to the distribution points you need to dep
 
 1. These scripts make the assumption that your Configuration Manager Distribution Point is in a healthy state as they rely heavily on it.
 2. When createing the package you must not be in the file explorer location for the source files.
-3. The the scripts need to be run from the script location not the Powershell site location.
+3. The scripts need to be run from the script location not the Powershell site location.
 4. Everything above can be done directly from the package and program wizard UI however by using powershell we can specify certain details with greater ease. 
